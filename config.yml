@@ -1,0 +1,13 @@
+monkey_reaching:
+  preprocessing:
+    bin_size_ms: 10
+  model:
+    latent_dim: 3
+    learning_rate: 0.00001
+    epochs: 100
+  evaluation:
+    decoders: ['linear', 'knn']
+    primary_decoder: 'linear'    
+    knn_neighbors: 10
+  participant: "C"
+  dataset: "monkey"
